@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incoming Stock Calculator</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="main_box">
+        <input type="checkbox" id="check" />
+        <div class="btn_one">
+            <label for="check">
+                <span class="material-symbols-outlined" style="color: aliceblue;">menu</span>
+            </label>
+        </div>
+    <div class="sidebar_menu">
+        <div class="logo">
+            <a href="#"> Innovators Warehouse</a>
+        </div>
+
+        <div class="btn_two">
+            <label for="check" style="color: grey">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-image"></i>
+                    <a href="home.html">home</a>
+                </li>
+               
+                <li>
+                    <i class="fa-solid fa-image"></i>
+                    <a href="about.html">About</a>
+                </li>
+               
+                <li>
+                    <i class="fa-solid fa-store"></i>
+                    <a href="#">Store</a>
+                </li>
+
+                <li>
+                    <i class="fa-regular fa-comments"></i>
+                    <a href="#">Feedback</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social_media">
+            <ul>
+                <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
+        </div>
+
+
+    </div>
+    <div id="calculator-container">
+        <h1>Incoming Stock Calculator</h1>
+
+        <label for="currentStock">Current Stock:</label>
+        <input type="number" id="currentStock" placeholder="Enter current stock..." required>
+
+        <label for="incomingQuantity">Incoming Quantity:</label>
+        <input type="number" id="incomingQuantity" placeholder="Enter incoming quantity..." required>
+
+        <button onclick="calculateAndUpdateStock()">Calculate and Update Stock</button>
+
+        <p id="updatedStockResult"></p>
+    </div>
+</body>
+
+</html>
